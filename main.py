@@ -65,7 +65,7 @@ def temps_de_vol(l):
     Returns:
         int: Le temps de vol.
     """
-    return len(l) - 1
+    return len(l)
 
 ### Fonction secondaire
 # affiche le temps de vol en altitude
@@ -81,7 +81,7 @@ def temps_de_vol_en_altitude(l):
     """
     for i in range(1, len(l)):
         if l[i] < l[0]:
-            return i - 1
+            return i
     return 0
 
 ### Fonction secondaire
